@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Task } from '@/src/types/task';
-import AddTaskForm from '@/src/components/tasks/AddTaskForm';
-import TaskList from '@/src/components/tasks/TaskList';
+import { Task } from '@/src/features/tasks/types/task';
+import AddTaskForm from '@/src/features/tasks/components/AddTaskForm';
+import TaskList from '@/src/features/tasks/components/TaskList';
 
 export default function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
